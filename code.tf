@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   count         = 1
 
   tags = {
-    Name = "my-ec2"
+    Name = "synced-code"
   }
 }
 
@@ -21,7 +21,7 @@ resource "aws_instance" "db" {
   count         = 1
 
   tags = {
-    Name = "my-db"
+    Name = "code-synced"
   }
 }
 
